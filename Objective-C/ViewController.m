@@ -27,12 +27,17 @@
   [super viewDidLoad];
   self.title = @"Objective-C";
   self.tableView.tableFooterView = [UIView new];
+    [self addNotification];
   // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - tableView delegate
@@ -86,6 +91,17 @@
   cell.textLabel.text = self.cellTitleArr[indexPath.row];
   return cell;
 }
+
+#pragma mark - private methods 
+- (void)addNotification {
+    NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
+    [notification addObserver:self selector:@selector(valueChanged:) name:@"testName" object:nil];
+}
+
+- (void)valueChanged:(NSNotification *)notification {
+    NSLog(@"--------");
+}
+
 
 #pragma getter and setter
 - (NSArray *)cellTitleArr {
