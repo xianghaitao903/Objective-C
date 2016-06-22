@@ -23,6 +23,7 @@
 		952CF5A41D1979DA00F2D835 /* ThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF5A31D1979DA00F2D835 /* ThreadVC.m */; };
 		952CF5A81D197A8000F2D835 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF5A71D197A8000F2D835 /* BlockVC.m */; };
 		952CF5AA1D197D7800F2D835 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 952CF5A91D197D7800F2D835 /* .gitignore */; };
+		95DF78881D1AD1B400179EBE /* KVOVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DF78871D1AD1B400179EBE /* KVOVCTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		952CF5A61D197A8000F2D835 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
 		952CF5A71D197A8000F2D835 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		952CF5A91D197D7800F2D835 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		95DF78871D1AD1B400179EBE /* KVOVCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVCTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				952CF5781D19728800F2D835 /* Objective_CTests.m */,
 				952CF57A1D19728800F2D835 /* Info.plist */,
+				95DF78871D1AD1B400179EBE /* KVOVCTest.m */,
 			);
 			path = "Objective-CTests";
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				952CF5791D19728800F2D835 /* Objective_CTests.m in Sources */,
+				95DF78881D1AD1B400179EBE /* KVOVCTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
