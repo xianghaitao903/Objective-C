@@ -47,6 +47,7 @@ completionBlock
 不用队列
 直接在一个同步操作中调用start方法，那么operation会在当前线程中执行，直到完成过后才返回
 如果在一个异步操作中调用start方法，在operation执行前就会反回，会创建一个新的线程完成这个operation
+
 使用队列
 如果将一个operation加入到一个异步队列中，总会在一个单独的线程中调用start方法。
 
@@ -77,6 +78,42 @@ NSOperationQueue是一个NSOperation的集合,当NSOperation被加入一个队�
 主线程
 
 ## NSThread
+### 初始化
+  [NSThread detachNewThreadSelector:@selector(downloadImage:)
+                           toTarget:self
+                         withObject:@"s"];
+自动开始
+  
+  NSThread *thread = [[NSThread alloc] initWithTarget:self
+                                             selector:@selector(downloadImage:)
+                                               object:@"s"];
+  [thread start];
+调用start方法过后才开始
+
+### 同步和异步
+  performSelector:onThread:withObject:waitUntilDone: 
+  waitUntilDone 为YES 为同步， NO为异步
+ 
+  performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(nullable id)arg waitUntilDone:(BOOL)wait modes:(nullable NSArray<NSString *> *)array
+
+  modes runLoopModel 组成的数组 例：[NSSet setWithObject:NSRunLoopCommonModes];
+
+### 线程安全
+一个数据同时可以被多个线程使用（修改和读取）时，数据可能会出现无意义的值，如买票（票数可能会出现负数）这时需要加锁
+  NSLock *theLock = [NSLock new];
+  [theLock lock];
+  // 数据的操作
+  [theLock unlock];
+
+  条件锁（）
+  NSCondition *theCondition = [NSCondition new];
+  [theCondition lock];
+  [theCondition wait]; //可以在其他线程，或本线程中执行 [theCondition signal];才会继续操作
+  //操作
+  [theCondition unlock];
+
+##RunLoop
+### 简介
 
 
 ##GCD

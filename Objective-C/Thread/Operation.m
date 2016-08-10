@@ -18,7 +18,6 @@
   }];
 }
 
-
 - (void)invocationOperation {
   NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(testMethod) object:nil];
   //不使用quene直接启动
@@ -47,6 +46,7 @@
 - (void)testMethod {
   
 }
+
 @end
 
 @interface NonConcurrent : NSOperation
@@ -70,7 +70,7 @@
 - (void)main {
   // 新建一个自动释放池，如果是异步执行操作，那么将无法访问到主线程的自动释放池
   @autoreleasepool {
-    //相应退出 耗时，每次遍历调用
+    //响应退出 耗时的操作，每次遍历时 调用
     if (self.cancelled) {
       return;
     }
@@ -200,7 +200,6 @@ static inline NSString * AFKeyPathFromOperationState(AFOperationState state) {
   [self.lock lock];
   if (![self isFinished] && ![self isCancelled]) {
     [super cancel];
-    
   }
   [self.lock unlock];
 }
