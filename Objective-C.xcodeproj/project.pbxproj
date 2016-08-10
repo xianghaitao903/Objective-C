@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952494D81D5B0885009184BB /* Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952494D71D5B0885009184BB /* Copy.m */; };
+		952494DA1D5B0ACE009184BB /* CopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 952494D91D5B0ACE009184BB /* CopyTest.m */; };
+		952494DC1D5B0EC9009184BB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 952494DB1D5B0EC9009184BB /* README.md */; };
 		952CF5601D19728800F2D835 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF55F1D19728800F2D835 /* main.m */; };
 		952CF5631D19728800F2D835 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF5621D19728800F2D835 /* AppDelegate.m */; };
 		952CF5661D19728800F2D835 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF5651D19728800F2D835 /* ViewController.m */; };
@@ -23,6 +26,7 @@
 		952CF5A41D1979DA00F2D835 /* ThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF5A31D1979DA00F2D835 /* ThreadVC.m */; };
 		952CF5A81D197A8000F2D835 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 952CF5A71D197A8000F2D835 /* BlockVC.m */; };
 		952CF5AA1D197D7800F2D835 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 952CF5A91D197D7800F2D835 /* .gitignore */; };
+		95431B591D25516D00CBCAE7 /* TimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95431B581D25516D00CBCAE7 /* TimerVC.m */; };
 		95DF78881D1AD1B400179EBE /* KVOVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DF78871D1AD1B400179EBE /* KVOVCTest.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		952494D61D5B0885009184BB /* Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Copy.h; sourceTree = "<group>"; };
+		952494D71D5B0885009184BB /* Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Copy.m; sourceTree = "<group>"; };
+		952494D91D5B0ACE009184BB /* CopyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyTest.m; sourceTree = "<group>"; };
+		952494DB1D5B0EC9009184BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		952CF55B1D19728800F2D835 /* Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952CF55F1D19728800F2D835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		952CF5611D19728800F2D835 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +75,8 @@
 		952CF5A61D197A8000F2D835 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
 		952CF5A71D197A8000F2D835 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		952CF5A91D197D7800F2D835 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		95431B571D25516D00CBCAE7 /* TimerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerVC.h; sourceTree = "<group>"; };
+		95431B581D25516D00CBCAE7 /* TimerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerVC.m; sourceTree = "<group>"; };
 		95DF78871D1AD1B400179EBE /* KVOVCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVCTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		952494D51D5B086C009184BB /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				952494D61D5B0885009184BB /* Copy.h */,
+				952494D71D5B0885009184BB /* Copy.m */,
+				952494DB1D5B0EC9009184BB /* README.md */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
 		952CF5521D19728800F2D835 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +130,8 @@
 		952CF55D1D19728800F2D835 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				952494D51D5B086C009184BB /* Copy */,
+				95431B561D25515B00CBCAE7 /* Timer */,
 				952CF58F1D1978CB00F2D835 /* Thread */,
 				952CF58B1D1978BA00F2D835 /* ARC */,
 				952CF58C1D1978BA00F2D835 /* KVC:KVO */,
@@ -145,6 +167,7 @@
 				952CF5781D19728800F2D835 /* Objective_CTests.m */,
 				952CF57A1D19728800F2D835 /* Info.plist */,
 				95DF78871D1AD1B400179EBE /* KVOVCTest.m */,
+				952494D91D5B0ACE009184BB /* CopyTest.m */,
 			);
 			path = "Objective-CTests";
 			sourceTree = "<group>";
@@ -219,6 +242,15 @@
 				952CF5A71D197A8000F2D835 /* BlockVC.m */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		95431B561D25515B00CBCAE7 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				95431B571D25516D00CBCAE7 /* TimerVC.h */,
+				95431B581D25516D00CBCAE7 /* TimerVC.m */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,14 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952494D81D5B0885009184BB /* Copy.m in Sources */,
 				952CF5661D19728800F2D835 /* ViewController.m in Sources */,
 				952CF5891D19777800F2D835 /* SelectorVC.m in Sources */,
 				952CF5A81D197A8000F2D835 /* BlockVC.m in Sources */,
 				952CF5631D19728800F2D835 /* AppDelegate.m in Sources */,
 				952CF5A11D1979CB00F2D835 /* ARCVC.m in Sources */,
 				952CF59E1D1979A000F2D835 /* KVOVC.m in Sources */,
+				95431B591D25516D00CBCAE7 /* TimerVC.m in Sources */,
 				952CF5601D19728800F2D835 /* main.m in Sources */,
 				952CF59B1D19797E00F2D835 /* NotificationVC.m in Sources */,
+				952494DC1D5B0EC9009184BB /* README.md in Sources */,
 				952CF5951D19790300F2D835 /* ProtocolVC.m in Sources */,
 				952CF5A41D1979DA00F2D835 /* ThreadVC.m in Sources */,
 				952CF5921D1978E200F2D835 /* CategoryVC.m in Sources */,
@@ -340,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952494DA1D5B0ACE009184BB /* CopyTest.m in Sources */,
 				952CF5791D19728800F2D835 /* Objective_CTests.m in Sources */,
 				95DF78881D1AD1B400179EBE /* KVOVCTest.m in Sources */,
 			);

@@ -13,6 +13,7 @@
 #import "ProtocolVC.h"
 #import "SelectorVC.h"
 #import "ThreadVC.h"
+#import "TimerVC.h"
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -27,7 +28,7 @@
   [super viewDidLoad];
   self.title = @"Objective-C";
   self.tableView.tableFooterView = [UIView new];
-    [self addNotification];
+  [self addNotification];
   // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -37,7 +38,7 @@
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - tableView delegate
@@ -67,6 +68,9 @@
   case 6:
     detailVC = [ThreadVC new];
     break;
+  case 7:
+    detailVC = [TimerVC new];
+    break;
   default:
     break;
   }
@@ -92,16 +96,18 @@
   return cell;
 }
 
-#pragma mark - private methods 
+#pragma mark - private methods
 - (void)addNotification {
-    NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
-    [notification addObserver:self selector:@selector(valueChanged:) name:@"testName" object:nil];
+  NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
+  [notification addObserver:self
+                   selector:@selector(valueChanged:)
+                       name:@"testName"
+                     object:nil];
 }
 
 - (void)valueChanged:(NSNotification *)notification {
-    NSLog(@"--------");
+  NSLog(@"--------");
 }
-
 
 #pragma getter and setter
 - (NSArray *)cellTitleArr {
@@ -113,7 +119,8 @@
       @"Block",
       @"Notification",
       @"KVO/KVC",
-      @"Thread"
+      @"Thread",
+      @"TimerVC"
     ];
   }
   return _cellTitleArr;
