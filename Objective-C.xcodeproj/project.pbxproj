@@ -111,7 +111,6 @@
 		952CF5521D19728800F2D835 = {
 			isa = PBXGroup;
 			children = (
-				952CF5A91D197D7800F2D835 /* .gitignore */,
 				952CF55D1D19728800F2D835 /* Objective-C */,
 				952CF5771D19728800F2D835 /* Objective-CTests */,
 				952CF55C1D19728800F2D835 /* Products */,
@@ -231,6 +230,13 @@
 			children = (
 				952CF5A21D1979DA00F2D835 /* ThreadVC.h */,
 				952CF5A31D1979DA00F2D835 /* ThreadVC.m */,
+				950877771D40591D005AEEBE /* Thread.h */,
+				950877781D40591D005AEEBE /* Thread.m */,
+				9508777A1D40595F005AEEBE /* Operation.h */,
+				9508777B1D40595F005AEEBE /* Operation.m */,
+				9508777D1D40596F005AEEBE /* GCD.h */,
+				9508777E1D40596F005AEEBE /* GCD.m */,
+				950877811D4066F1005AEEBE /* README.md */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -333,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				952CF5AA1D197D7800F2D835 /* .gitignore in Resources */,
 				952CF56E1D19728800F2D835 /* LaunchScreen.storyboard in Resources */,
 				952CF56B1D19728800F2D835 /* Assets.xcassets in Resources */,
 				952CF5691D19728800F2D835 /* Main.storyboard in Resources */,
@@ -357,17 +362,21 @@
 				952494D81D5B0885009184BB /* Copy.m in Sources */,
 				952CF5661D19728800F2D835 /* ViewController.m in Sources */,
 				952CF5891D19777800F2D835 /* SelectorVC.m in Sources */,
+				9508777F1D40596F005AEEBE /* GCD.m in Sources */,
 				952CF5A81D197A8000F2D835 /* BlockVC.m in Sources */,
 				952CF5631D19728800F2D835 /* AppDelegate.m in Sources */,
 				952CF5A11D1979CB00F2D835 /* ARCVC.m in Sources */,
+				9508777C1D40595F005AEEBE /* Operation.m in Sources */,
 				952CF59E1D1979A000F2D835 /* KVOVC.m in Sources */,
 				95431B591D25516D00CBCAE7 /* TimerVC.m in Sources */,
 				952CF5601D19728800F2D835 /* main.m in Sources */,
+				950877821D4066F1005AEEBE /* README.md in Sources */,
 				952CF59B1D19797E00F2D835 /* NotificationVC.m in Sources */,
 				952494DC1D5B0EC9009184BB /* README.md in Sources */,
 				952CF5951D19790300F2D835 /* ProtocolVC.m in Sources */,
 				952CF5A41D1979DA00F2D835 /* ThreadVC.m in Sources */,
 				952CF5921D1978E200F2D835 /* CategoryVC.m in Sources */,
+				950877791D40591D005AEEBE /* Thread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Objective-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xianghaitao.Objective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,7 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Objective-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xianghaitao.Objective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
