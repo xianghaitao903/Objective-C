@@ -11,7 +11,6 @@
 #import "KVOVC.h"
 #import "NotificationVC.h"
 #import "ProtocolVC.h"
-#import "SelectorVC.h"
 #import "ThreadVC.h"
 #import "TimerVC.h"
 #import "ViewController.h"
@@ -48,27 +47,24 @@
   NSInteger row = indexPath.row;
   switch (row) {
   case 0:
-    detailVC = [SelectorVC new];
-    break;
-  case 1:
     detailVC = [CategoryVC new];
     break;
-  case 2:
+  case 1:
     detailVC = [ProtocolVC new];
     break;
-  case 3:
+  case 2:
     detailVC = [BlockVC new];
     break;
-  case 4:
+  case 3:
     detailVC = [NotificationVC new];
     break;
-  case 5:
+  case 4:
     detailVC = [KVOVC new];
     break;
-  case 6:
+  case 5:
     detailVC = [ThreadVC new];
     break;
-  case 7:
+  case 6:
     detailVC = [TimerVC new];
     break;
   default:
@@ -113,7 +109,6 @@
 - (NSArray *)cellTitleArr {
   if (!_cellTitleArr) {
     _cellTitleArr = @[
-      @"selector",
       @"Category",
       @"protocol",
       @"Block",

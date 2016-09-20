@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^BlockName)(NSString *);
+
 @interface BlockVC : UIViewController
+
+@property(nonatomic, strong) BlockName blockName;
+
+- (void)testBlock:(NSString * (^)(NSString *parameter))callBack;
 
 @end

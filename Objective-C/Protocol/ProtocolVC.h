@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProtocolVC : UIViewController
+@protocol TestProtocol <NSObject>
+
+@optional
+- (void)optionalMethod1;
+- (void)optionalMethod2;
+
+@required
+- (void)requireDmethod1;
+- (void)requireDmethod2;
+- (void)requireDmethod3;
+
+@end
+
+@interface ProtocolVC : UIViewController <TestProtocol>
+
+@property(nonatomic, weak) id<TestProtocol> testProtocol;
 
 @end
