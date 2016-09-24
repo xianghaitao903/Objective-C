@@ -19,8 +19,6 @@
   // Override point for customization after application launch.
   // ssssssss
   // sssssss
-//  ssss
-//  ssssss
   return YES;
 }
 
