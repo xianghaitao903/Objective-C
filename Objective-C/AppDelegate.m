@@ -17,20 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
-//sssss
-//sss
-//ssss
-//ssss
-///sssaaasas
-//ssasada
-//saassaad
-//sdffwwwe
-//weewewrwr
-//weerwerwrwrwe
-//werwrerwerewrwere
-//werwerwre
+// ssss
+// /ssss
  NSLog(@"helo world");
   return YES;
+// sssaas
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
