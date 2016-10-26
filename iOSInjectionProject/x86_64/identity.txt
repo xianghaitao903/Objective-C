@@ -1,2 +1,0 @@
-/Users/xianghaitao/Library/Developer/Xcode/DerivedData/Objective-C-hbfsdynpteireqgkcjapxbswplkt/Build/Products/Debug-iphonesimulator/Objective-C.app
-
