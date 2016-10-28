@@ -19,7 +19,9 @@
   // Override point for customization after application launch.
   //测试
   // 222
-    
+//     wwww
+//   wwwqwewqeqw
+  //wwwwqww//
  NSLog(@"helo world");
   return YES;
 }
